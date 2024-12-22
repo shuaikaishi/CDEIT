@@ -447,34 +447,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-path", type=str)
     parser.add_argument("--results-dir", type=str, default="results")
-    # parser.add_argument("--model", type=str, choices=list(DiT_models.keys()), default="DiT-XL/2")
     parser.add_argument("--image-size", type=int, choices=[256, 512], default=256)
-    # parser.add_argument("--num-classes", type=int, default=1000)
     parser.add_argument("--epochs", type=int, default=1400)
     parser.add_argument("--global-batch-size", type=int, default=16)
     parser.add_argument("--global-seed", type=int, default=0)
-    # parser.add_argument("--vae", type=str, choices=["ema", "mse"], default="ema")  # Choice doesn't affect training
+    parser.add_argument("--mode", type=str, choices=["train", "test"], default="test")
     parser.add_argument("--num-workers", type=int, default=4)
     parser.add_argument("--log-every", type=int, default=500)
     parser.add_argument("--ckpt-every", type=int, default=1000)
     parser.add_argument("--samplingsteps", type=int, default=5)
     args = parser.parse_args()
-
-    if os.name == 'nt':
-        # main1gpu(args)
-        # test1gpu(args)
-        # main(args)
-        test(args)
-        #
-        pass
-    else:
-        tic = time()
+    if args.mode=='train':
         main(args)
-        toc = time()
-        print('train time', toc - tic)
+    if args.mode=='test':
         test(args)
-        tic = time()
-        print('test time', tic - toc)
-
-    # CUDA_VISIBLE_DEVICES=1 accelerate launch trainAccele.py
+   
 
