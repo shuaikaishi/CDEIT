@@ -13,7 +13,7 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
   The real data has been placed in the `./data/` in the appropriate format.
 
-- Put the data at `./data/` and run `python train.py`
+- Put the data at `./data/` and run `python main.py --mode train`
 
 
 
@@ -21,7 +21,7 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
 - The pretraining weight `best.pt` is at https://drive.google.com/file/d/1xOP4PMbGpsgz1e1s3BtHx4cFPfGUnlnn/view?usp=drive_link
 - Download the pretraining weight and put it to `./results/deit/checkpoints`
-- Put the test data at `./data/`  and run `python test.py --data simulated` for EIDORS generated data, `python test.py --data uef2017` for UEF2017 dataset or `python test.py --data ktc2023`  for KTC2023 dataset
+- Put the test data at `./data/`  and run `python main.py --mode test --data simulated` for EIDORS generated data, `python main.py --mode test --data uef2017` for UEF2017 dataset or `python main.py --mode test --data ktc2023`  for KTC2023 dataset
 - The prediction will be at  `./results/deit/checkpoints`
 
 ## Citation
