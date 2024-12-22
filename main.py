@@ -357,10 +357,15 @@ def test(args):
         datapath = '/dpc/kuin0055/eitssk/data/dataDiscrete'
     elif '3070' in gpuname:
         datapath = '../../data/eitdata/dataDiscrete'
+ 
     path = datapath + '/test/'
-
-    dataTe = EITdataset(path, modelname, dataset='data')  #
-
+    dataTe = EITdataset(path, modelname, dataset='data')
+    if args.data == 'uef2017':
+        path = datapath + '/data2017/'
+        dataTe = EITdataset(path, modelname, dataset='data2017')
+    elif args.data == 'ktc2023':
+        path = datapath + '/data2023/'
+        dataTe = EITdataset(path, modelname, dataset='data2023')
     loaderTe = DataLoader(
         dataTe,
         batch_size=args.global_batch_size * 1,
@@ -452,6 +457,7 @@ if __name__ == "__main__":
     parser.add_argument("--global-batch-size", type=int, default=16)
     parser.add_argument("--global-seed", type=int, default=0)
     parser.add_argument("--mode", type=str, choices=["train", "test"], default="test")
+    parser.add_argument("--data", type=str, choices=["simulated", "uef2017", "ktc2023"], default="simulated")
     parser.add_argument("--num-workers", type=int, default=4)
     parser.add_argument("--log-every", type=int, default=500)
     parser.add_argument("--ckpt-every", type=int, default=1000)
