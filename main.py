@@ -132,12 +132,9 @@ def main(args):
     # )
     gpuname = torch.cuda.get_device_name(0)
     modelname = 'DEIT'
-    if '4090' in gpuname:
-        datapath = '../../data'
-    elif '100' in gpuname:
-        datapath = '/dpc/kuin0055/eitssk/data/dataDiscrete'
-    elif '3070' in gpuname:
-        datapath = '../../data/eitdata/dataDiscrete'
+     
+    datapath = './data'
+     
 
     path = datapath + '/train/'
     dataset = EITdataset(path, modelname)
@@ -351,12 +348,9 @@ def test(args):
     gpuname = torch.cuda.get_device_name(0)
     # print(gpuname)
     modelname = 'DEIT'
-    if '4090' in gpuname:
-        datapath = '../../data'
-    elif '100' in gpuname:
-        datapath = '/dpc/kuin0055/eitssk/data/dataDiscrete'
-    elif '3070' in gpuname:
-        datapath = '../../data/eitdata/dataDiscrete'
+    
+    datapath = './data'
+   
  
     path = datapath + '/test/'
     dataTe = EITdataset(path, modelname, dataset='data')
