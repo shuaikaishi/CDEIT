@@ -1,5 +1,5 @@
 ## A Conditional Diffusion Model for Electrical Impedance Tomography Image Reconstruction  
-The code in this toolbox implements the "[A Conditional Diffusion Model for Electrical Impedance Tomography Image Reconstruction](https://arxiv.org/abs/2412.16979)". More specifically, it is detailed as follow.
+The code in this toolbox implements the "[A Conditional Diffusion Model for Electrical Impedance Tomography Image Reconstruction]([https://arxiv.org/abs/2412.16979](https://ieeexplore.ieee.org/document/10922741))". More specifically, it is detailed as follow.
 
 ![](./net.jpg)
 
