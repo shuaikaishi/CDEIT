@@ -28,12 +28,17 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
 **Please kindly cite the papers if this code is useful and helpful for your research.**
 ```
-@article{shi2024neural,
-   title={A Conditional Diffusion Model for Electrical Impedance Tomography Image Reconstruction},
-   author={Shi, Shuaikai and Kang, Ruiyuan and  Liatsis, Panos},
-   journal={arXiv preprint arXiv:2412.16979},
-   year={2024}
-}
+@ARTICLE{10922741,
+  author={Shi, Shuaikai and Kang, Ruiyuan and Liatsis, Panos},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={A Conditional Diffusion Model for Electrical Impedance Tomography Image Reconstruction}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Conductivity;Image reconstruction;Electrical impedance tomography;Diffusion models;Noise reduction;Accuracy;Training;Inverse problems;Feature extraction;Deep learning;Electrical impedance tomography;image reconstruction;diffusion model;probabilistic model;measurement visualization},
+  doi={10.1109/TIM.2025.3550245}}
+
 ```
 
 ## Contact Information:
