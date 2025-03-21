@@ -15,7 +15,7 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
 - Put the data at `./data/` and run `python main.py --mode train`
 
-- **Data format** The data was stored in npz format which contains 'ys' as the voltage vector, 'xs' as the true value of conductivity, 'xs_gn' as the conductivity predicted by the Gauss-Newton method and 'TR' as the conductivity predicted by the Tikhonov regression.
+- **Data format*:* The data was stored in npz format which contains `ys` as the voltage vector, `xs` as the true value of conductivity, `xs_gn` as the conductivity predicted by the Gauss-Newton method and `TR` as the conductivity predicted by the Tikhonov regression.
 
 ## Test
 
