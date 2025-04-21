@@ -9,7 +9,7 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
 - **Simulated data:** The EIDORS generated dataset is at https://drive.google.com/file/d/1pNSEdf3nxn809pkFCoHGuSydcU9yT7Pw/view?usp=drive_link
 
--- **Data generation:** Follow the setting from https://github.com/chdim100/Weighted-Sparse-Bayesian-Learning-for-Electrical-Impedance-Tomography/blob/main/Src/Main.m
+ - **Data generation:** Follow the setting from https://github.com/chdim100/Weighted-Sparse-Bayesian-Learning-for-Electrical-Impedance-Tomography/blob/main/Src/Main.m
 
 - **Real-world data:** Two real-world data can be downloaded from https://fips.fi/open-datasets/eit-datasets/2d-electrical-impedance-tomography-dataset/ for the 2D electrical impedance tomography dataset collected by the Finnish Inverse Problems Society at the University of Eastern Finland in 2017 (UEF2017) and https://zenodo.org/records/8252370 for the Kuopio Tomography Challenge 2023 (KTC2023).
 
