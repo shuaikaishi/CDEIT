@@ -43,6 +43,9 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
 ```
 
+
+This code is mainly built upon [DiT](https://github.com/facebookresearch/DiT) repositories.
+
 ## Contact Information:
 
 If you encounter any bugs while using this code, please do not hesitate to contact us.
