@@ -15,7 +15,7 @@ The code in this toolbox implements the "[A Conditional Diffusion Model for Elec
 
   The real data has been placed in the `./data/` in the appropriate format.
 
-- Put the data at `./data/` and run `python main.py --mode train`
+- Put the data at `./data/` and run `python main.py --mode train` on 1 GPU or `accelerate launch main.py --mode train` on multi-GPUs machine
 
 - **Data format*:* The data was stored in npz format which contains `ys` as the voltage vector, `xs` as the true value of conductivity, `xs_gn` as the conductivity predicted by the Gauss-Newton method and `TR` as the conductivity predicted by the Tikhonov regression.
 
