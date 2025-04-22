@@ -142,7 +142,7 @@ def main(args):
     path = datapath + '/valid/'
     dataVal = EITdataset(path, modelname)
 
-    args.epochs = int(np.ceil(50000 / (len(dataset) / args.global_batch_size / gpus)))
+    args.epochs = int(np.ceil(200000 / (len(dataset) / args.global_batch_size / gpus)))
     batch_size = args.global_batch_size
 
     loader = DataLoader(
